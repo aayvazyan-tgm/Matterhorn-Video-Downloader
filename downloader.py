@@ -2,7 +2,11 @@ import sys
 import urllib.request
 import webbrowser
 
-id=sys.argv[1][sys.argv[1].find("id=")+3:]
+if(len(sys.argv)!=2):
+    inp= input("URL zum Vortrag eingeben: ")
+else:
+    inp=sys.argv[1]
+id=inp[inp.find("id=")+3:]
 xmlPageWithFlvLink = urllib.request.urlopen("https://mh-engage.ltcc.tuwien.ac.at/search/episode.xml?id="+id).read()
 
 content = xmlPageWithFlvLink.decode('utf-8')
