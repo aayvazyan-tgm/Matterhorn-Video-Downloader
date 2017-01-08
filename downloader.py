@@ -1,3 +1,5 @@
+#Author: Ari Ayvazyan
+#Github: https://github.com/aayvazyan-tgm
 import sys
 import urllib.request
 import webbrowser
