@@ -11,9 +11,12 @@ xmlPageWithFlvLink = urllib.request.urlopen("https://mh-engage.ltcc.tuwien.ac.at
 
 content = xmlPageWithFlvLink.decode('utf-8')
 linkEnd = content.find(".flv")+4
-linkStart = content[:linkEnd].rfind("https://")
+linkStart = content[:linkEnd].rfind("http://")
+linkStart2 = content[:linkEnd].rfind("https://")
+if(linkStart<linkStart2):
+    linkstart=linkStart2
 
 todownload = content[linkStart:linkEnd]
-
+print(todownload)
 webbrowser.open(todownload)
 
