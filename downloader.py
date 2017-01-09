@@ -16,7 +16,7 @@ linkEnd = content.find(".flv")+4
 linkStart = content[:linkEnd].rfind("http://")
 linkStart2 = content[:linkEnd].rfind("https://")
 if(linkStart<linkStart2):
-    linkstart=linkStart2
+    linkStart=linkStart2
 
 todownload = content[linkStart:linkEnd]
 print(todownload)
