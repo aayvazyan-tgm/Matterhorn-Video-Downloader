@@ -1,5 +1,7 @@
 #Author: Ari Ayvazyan
 #Github: https://github.com/aayvazyan-tgm
+#Downloads the raw video files from matterhorn for TU Wien. 
+#You need to be connected via vpn or in the intranet to download a video.
 import sys
 import urllib.request
 import webbrowser
